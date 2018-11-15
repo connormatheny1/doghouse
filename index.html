@@ -7,7 +7,7 @@
         <title>DogHouse</title>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/responsiveslides.min.js"></script>
         <link href="styles/main.css" rel="stylesheet" type="text/css">
     </head>
     
@@ -31,8 +31,11 @@
         
         <!-- carousel slideshow of photos of people and dogs 100vh-->
             <!-- small captions on each picture-->   
-        
-        
+        <ul class="rslides">
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+            <li><img src="" alt=""></li>
+        </ul>
         
         
         
@@ -43,6 +46,17 @@
         
         <!-- colors: orange: EE964B, blue: 083D77, white: EBEBD3 -->
         <!-- jQuery and PHP contact form handler -->
+        
+        
+        <!-- Slick carousel plug in 
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>-->
+        <script>
+            $(function() {
+                $(".rslides").responsiveSlides();
+            });
+</script>
     </body>
     
 </html>
