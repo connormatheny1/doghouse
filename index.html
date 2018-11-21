@@ -7,10 +7,10 @@
         <title>DogHouse</title>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
+        
         <link href="styles/main.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
     
     <body>
@@ -21,7 +21,7 @@
             <!-- index, meet the team, about us w/contact, gallery, scheduler -->
         
         <nav id="nav_container">
-            <div id="logo_container"><a href="index.html"><img src="images/doghouse-logo.png"></a></div>
+            <div id="logo_container"><a href="index.html"><img src="images/doghouse-logo.png" width="218px"></a></div>
             <ul id="nav_list_container">
                 <a href="index.html"><li class="nav_item">Home</li></a>
                 <a href="documents/gallery.html"><li class="nav_item">Gallery</li></a>
@@ -88,6 +88,7 @@
             $(window).bind("resize", ScaleSlider);
             $(window).bind("orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
+            
         });
     </script>
     <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
@@ -128,16 +129,19 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
             
             <div>
-                <img data-u="image" src="images/001.jpg" />
+                <img data-u="image" src="images/dog3.jpg" />
             </div>
             <div>
-                <img data-u="image" src="images/002.jpg" />
+                <img data-u="image" src="images/dog2.jpg" />
             </div>
             <div>
-                <img data-u="image" src="images/003.jpg" />
+                <img data-u="image" src="images/dog1.jpg" />
             </div>
             <div>
-                <img data-u="image" src="images/" />
+                <img data-u="image" src="images/dog4.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="images/dog5.jpg" />
             </div>
 
         </div>
@@ -164,19 +168,65 @@
     
     <!-- Carousel End -->
         
-    <h1 id="features_header">Features</h1>
+    <h1 id="features_header">What can DogHouse do for you?</h1>
+        
+      
+    <div class="features_items">
+        <p class="testimonial">“DogHouse knows exactly what you need - puppy love!”<br><br> — Bruce W., Columbus, OH</p>
+        </div>
+        
+    <div class="parallax-container center valign-wrapper">
+        <div class="parallax">
+            <img src="images/01.jpg">
+        </div>
+  
+        <div class="container white-text">
+            <div class="row">
+                <div class="col s12">
+                    <h5>Stop by and play with our pups whenever you want</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+    <div class="features_items">
+        <p class="testimonial">“My wife is allergic to dogs, so we can’t have one in the home. Sometimes I stop by DogHouse after work and get in some playtime!”<br><br> — Clark K., Oxford, OH</p>
+    </div> 
         
         
-    <div id="features_container">
-        <div class="features_items"><p>ParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraphParagraph</p></div>
-        <div class="features_items"></div>
-        <div class="features_items"></div>
+    <div class="parallax-container center valign-wrapper">
+        <div class="parallax">
+            <img src="images/02.png">
+        </div>
+  
+        <div class="container white-text">
+            <div class="row">
+                <div class="col s12">
+                    <h5>Or take a new friend home with you</h5>
+                </div>
+            </div>
+        </div>
     </div>    
         
-        <div class="main">
+
+    <div class="features_items">
+        <p class="testimonial">"I can’t afford to have a puppy of my own yet. DogHouse is a perfect way for me to learn what dog breeds I will want in the future!”<br><br> — Jessica J., Cincinnati, O</p>
+    </div>
         
-    <footer></footer>  
-            </div>
+       
+        
+        <footer id="footer">
+            
+        </footer>
+        
+        
+        <script src="js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.parallax').parallax();
+            });
+        </script>
     </body>
     
 </html>
