@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="en">
-    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>DogHouse</title>
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        
-        
         <link href="styles/main.css" rel="stylesheet" type="text/css">
+        <script src="js/script.js"></script>
     </head>
     
     <body>
@@ -126,12 +123,14 @@
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+        
+        
+        <div data-u="slides" style="cursor:default;position:relative;top:60px;left:0px;width:1300px;height:500px;overflow:hidden;">
             
-            <div>
+            <!--<div>
                 <img data-u="image" src="images/dog3.jpg" />
-            </div>
-            <div>
+            </div>-->
+            <div class="carousel_images">
                 <img data-u="image" src="images/dog2.jpg" />
             </div>
             <div>
@@ -173,7 +172,7 @@
         
         
         
-    <h1 id="features_header">What can DogHouse do for you?</h1>
+    <h2 class="features_header">What can DogHouse do for you?</h2>
         
     
     <div id="three_column">
@@ -184,12 +183,14 @@
         </div>
         
         <div class="three_items">
-            <h4>Make a friend</h4>
+            <h4>Find a friend</h4>
+            <img src="images/magnifying_glass.svg">
             <p></p>
         </div>
         
         <div class="three_items">
             <h4>Take a dog home</h4>
+            <img src="images/make_friend_graphic.svg">
             <p></p>
         </div>
         
@@ -249,17 +250,18 @@
         
         
         
-        <footer id="footer">
-            &copy;DogHouse 2018
-        </footer>
+    <footer id="footer" style="height: 70px;">
+        &copy;DogHouse 2018
+    </footer>
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        //parallax pics on index
+        $(document).ready(function(){
+            $('.parallax').parallax(); 
+        });    
+    </script>
         
-        <script src="js/materialize.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('.parallax').parallax();
-            });
-        </script>
     </body>
     
 </html>
