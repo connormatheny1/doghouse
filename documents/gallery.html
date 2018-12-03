@@ -1,25 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>DogHouse</title>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="../js/script.js"></script>
+        
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
     </head>
-    
     <body>
         
-    <!--DO this stuff    
-
-        <!-- horizontal nav bar, logo top left, unordered inline list for nav -->
-            <!-- index, meet the team, about us w/contact, gallery, scheduler -->
-        
         <nav id="nav_container">
-            <div id="logo_container"><a href="../index.html"><img src="../images/doghouse-logo.png"></a></div>
+            <div id="logo_container"><a href="index.html"><img src="../images/doghouse-logo.png" width="218px"></a></div>
             <ul id="nav_list_container">
                 <a href="../index.html"><li class="nav_item">Home</li></a>
                 <a href="gallery.html"><li class="nav_item">Gallery</li></a>
@@ -28,6 +23,52 @@
                 <a href="about.html"><li class="nav_item">About</li></a>
             </ul>
         </nav>
-        </body>
-    
+        
+        <div id="gallery">
+
+        <!-- Photo Grid -->
+        <div class="row"> 
+          <div class="column">
+            <div class="img-wrap">
+                <img src="../images/gallery1.png" style="width:100%">
+                <p class="img-cap">My name is Waddles! I am a 3-year-old Corgi. My favorite thing to do is whatever you want to do, as long as we’re together.</p>
+            </div>
+            <img src="../images/dog2.jpg" style="width:100%">
+            <div class="img-wrap">
+                <img src="../images/gallery3.png" style="width:100%">
+                <p class="img-cap">My name is Shimmer! I am a 1-year-old Samoyed. My preferred activity is fetch, but I’ll go for anything that involves running.</p>
+            </div>
+            <img src="../images/dog4.jpg" style="width:100%">
+            <div class="img-wrap">
+                <img src="../images/gallery5.png" style="width:100%">
+                <p class="img-cap">My name is River! I am a 2-year-old German Shepherd who loves to run around, play fetch, and do lots of high-energy activities.</p>
+            </div>
+            <img src="../images/dog6.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="../images/dog1.jpg" style="width:100%">
+            <div class="img-wrap">
+                <img src="../images/gallery2.png" style="width:100%">
+                <p class="img-cap">My name is Titus! I am a 4-year-old Saint Bernard, and I love you! And sitting on your legs while I demands ear scratches.</p>
+            </div>
+            <img src="../images/dog3.jpg" style="width:100%">
+            <div class="img-wrap">
+                <img src="../images/gallery4.png" style="width:100%">
+                <p class="img-cap">My name is Tug! I am a 6 year old Basset Hound, favoring to lounge around in the sun and enjoy long periods of belly pets!</p>
+            </div>
+            <img src="../images/dog5.jpg" style="width:100%">
+            <div class="img-wrap">
+                <img src="../images/gallery6.jpg" style="width:100%">
+                <p class="img-cap">My name is Peanut! I am a 1 year old Corgi who loves to run around and use your body as a playground!</p>
+            </div>
+          </div> 
+        </div>
+            
+        </div>
+        
+        <footer id="footer" style="height: 70px;">
+            &copy;DogHouse 2018
+        </footer>
+
+    </body>
 </html>

@@ -12,7 +12,13 @@
         
         <link href="../styles/main.css" rel="stylesheet" type="text/css">
     </head>
+    
     <body>
+             
+    <!--DO this stuff    
+
+        <!-- horizontal nav bar, logo top left, unordered inline list for nav -->
+            <!-- index, meet the team, about us w/contact, gallery, scheduler -->
         
         <nav id="nav_container">
             <div id="logo_container"><a href="index.html"><img src="../images/doghouse-logo.png" width="218px"></a></div>
@@ -24,35 +30,30 @@
                 <a href="about.html"><li class="nav_item">About</li></a>
             </ul>
         </nav>
-    
-    
-    <main class="schedule-form">
         
-        <h2 class="features_header">Hey there! Please use our form below to schedule your next visit to DogHouse.</h2>
         
-        <form class="schedule">
-        
-            <input name="name" placeholder="Name">
-
-            <input name="email" type="email" placeholder="Email">
+        <main id="thanks">
             
-            <label>Please visit our <a href="gallery.html" title="Gallery" target="_blank">gallery</a> page to find a canine companion!</label>
-            <input name="dog" type="text" placeholder="Name of Dog You Want to Visit">
+            <img id="thanks-img" src="../images/dog1.jpg" alt="dog">
+        
+            <p>Thank you for submitting your form! Our team will receive your request and email you your appointment information as soon as everything gets through the system.</p>
+            <p>Your newest furry friends eagerly awaits your visit!</p>
             
-            <label>Date of Visit</label>
-            <input name="date" type="date" placeholder="Date of Visit">
-
-            <textarea name="message" placeholder="Additional information . . ."></textarea>
-
-            <a href="thanks.html" style="text-align: center; font-size: 1.5em">Submit</a>
-
-        </form>
-
-    </main>
+        </main>
+        
         
         <footer id="footer" style="height: 70px;">
             &copy;DogHouse 2018
         </footer>
-    
+        
+        
+        <script src="js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.parallax').parallax();
+                
+            });
+        </script>
     </body>
+    
 </html>
